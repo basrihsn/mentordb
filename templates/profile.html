@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Hi {{ current_user.fname }}!
+  {% if current_user.is_authenticated %}
+    Hi {{ current_user.fname }}!
+  {% endif %}
+</h1>
+{% endblock %}
